@@ -1,18 +1,22 @@
 package exercise01.singleton;
 
-public class Logger {
-
-    private static Logger instance;
+/**
+ * Singleton Logger class.
+ * Uses the Initialization-on-demand holder idiom for thread-safety.
+ */
+public final class Logger {
 
     private Logger() {
         System.out.println("Logger Instance Created");
     }
 
+    // Static inner class responsible for holding the singleton instance
+    private static class LoggerHolder {
+        private static final Logger INSTANCE = new Logger();
+    }
+
     public static Logger getInstance() {
-        if (instance == null) {
-            instance = new Logger();
-        }
-        return instance;
+        return LoggerHolder.INSTANCE;
     }
 
     public void log(String message) {

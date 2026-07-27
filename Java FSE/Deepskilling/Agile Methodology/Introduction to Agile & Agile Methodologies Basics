@@ -1,0 +1,694 @@
+# 🔄 Agile & Agile Methodologies
+
+> **Cognizant Digital Nurture 5.0 — Java FSE**
+> Basic introduction to **Agile, Agile Methodologies, Scrum, Kanban, Planning Poker, Estimation, and Conflict Resolution**.
+
+---
+
+## 📖 Introduction
+
+**Agile** is a software development approach that focuses on developing software in **small and frequent increments** instead of building the entire application at once.
+
+Agile encourages:
+
+* 🤝 Team collaboration
+* 🔄 Continuous improvement
+* 💬 Regular feedback
+* 📦 Frequent delivery
+* 🎯 Customer satisfaction
+* 🔧 Adaptability to changing requirements
+
+> 💡 **Simple Definition:**
+> Agile is an iterative and flexible approach where teams develop software in small increments and continuously improve it based on feedback.
+
+---
+
+# 🔄 What is Agile?
+
+Agile follows an **iterative and incremental** development approach.
+
+```text
+Plan
+  ↓
+Design
+  ↓
+Develop
+  ↓
+Test
+  ↓
+Review
+  ↓
+Feedback
+  ↺
+```
+
+Instead of waiting until the entire application is complete, Agile teams regularly deliver working increments of the product.
+
+---
+
+# 🎯 Main Goals of Agile
+
+| Goal                          | Description                                         |
+| :---------------------------- | :-------------------------------------------------- |
+| 🎯 **Customer Satisfaction**  | Deliver useful software according to customer needs |
+| ⚡ **Frequent Delivery**       | Deliver working software regularly                  |
+| 🔄 **Adaptability**           | Respond effectively to changing requirements        |
+| 🤝 **Collaboration**          | Encourage teamwork and communication                |
+| 💬 **Continuous Feedback**    | Collect feedback throughout development             |
+| 📈 **Continuous Improvement** | Improve the product and process regularly           |
+
+---
+
+# 📜 Agile Manifesto
+
+The **Agile Manifesto** describes four core values:
+
+| Agile Values                        | Preference                       |
+| :---------------------------------- | :------------------------------- |
+| 👥 **Individuals and interactions** | over processes and tools         |
+| 💻 **Working software**             | over comprehensive documentation |
+| 🤝 **Customer collaboration**       | over contract negotiation        |
+| 🔄 **Responding to change**         | over following a plan            |
+
+> **Important:**
+> The items on the right still have value, but Agile places greater emphasis on the items on the left.
+
+---
+
+# ♻️ Agile Development Lifecycle
+
+A basic Agile lifecycle can be represented as:
+
+```text
+Requirements
+     ↓
+Planning
+     ↓
+Design
+     ↓
+Development
+     ↓
+Testing
+     ↓
+Review
+     ↓
+Feedback
+     │
+     └──────► Next Iteration
+```
+
+|        Stage        | Description                           |
+| :-----------------: | :------------------------------------ |
+| 📋 **Requirements** | Understand what needs to be developed |
+|   📝 **Planning**   | Decide tasks and priorities           |
+|    🎨 **Design**    | Plan the solution                     |
+|  💻 **Development** | Implement functionality               |
+|    🧪 **Testing**   | Verify the software                   |
+|    🔍 **Review**    | Review completed work                 |
+|   💬 **Feedback**   | Collect suggestions for improvement   |
+
+---
+
+# 🧠 What are Agile Methodologies?
+
+Agile methodologies are frameworks and approaches used to apply Agile values and principles.
+
+| Methodology                        | Main Focus                                 |
+| :--------------------------------- | :----------------------------------------- |
+| 🔄 **Scrum**                       | Development using short Sprints            |
+| 📋 **Kanban**                      | Visualizing and managing workflow          |
+| 🧑‍💻 **Extreme Programming (XP)** | Software quality and engineering practices |
+| 🚀 **Lean Development**            | Reducing waste and maximizing value        |
+
+---
+
+# 🔄 Scrum
+
+**Scrum** is one of the most commonly used Agile frameworks.
+
+Work is organized into fixed-length development cycles called **Sprints**.
+
+```text
+Product Backlog
+      ↓
+Sprint Planning
+      ↓
+Sprint
+      ↓
+Working Increment
+      ↓
+Sprint Review
+      ↓
+Sprint Retrospective
+      ↺
+```
+
+---
+
+## 👥 Basic Scrum Roles
+
+| Role                 | Responsibility                                          |
+| :------------------- | :------------------------------------------------------ |
+| 👤 **Product Owner** | Maximizes product value and manages the Product Backlog |
+| 🧭 **Scrum Master**  | Helps the team understand and apply Scrum               |
+| 👨‍💻 **Developers** | Build and deliver the product increment                 |
+
+---
+
+# 📋 Product Backlog
+
+The **Product Backlog** is an ordered list of work required for the product.
+
+It may contain:
+
+* New features
+* Improvements
+* Bug fixes
+* Technical work
+* Other product requirements
+
+```text
+Product Backlog
+│
+├── User Login
+├── User Registration
+├── Search Feature
+├── Payment Feature
+└── Bug Fixes
+```
+
+The Product Owner is accountable for effective Product Backlog management and ordering.
+
+---
+
+# 👤 User Stories
+
+A **User Story** is a simple way to describe a requirement from the user's perspective.
+
+A commonly used format is:
+
+```text
+As a <type of user>,
+I want <some goal>,
+so that <some benefit>.
+```
+
+### Example
+
+```text
+As a customer,
+I want to reset my password,
+so that I can regain access to my account.
+```
+
+User stories help teams understand **who needs the feature, what they need, and why they need it**.
+
+---
+
+# ⭐ Story Points
+
+**Story Points** are used by many Agile teams to estimate the relative effort involved in completing work.
+
+Story Points may consider:
+
+* Complexity
+* Amount of work
+* Uncertainty
+* Technical difficulty
+
+A commonly used scale is:
+
+```text
+1 → 2 → 3 → 5 → 8 → 13 → 21
+```
+
+### Example
+
+| User Story                    | Example Estimate |
+| :---------------------------- | :--------------: |
+| Change button text            |         1        |
+| Add validation                |         3        |
+| Create login functionality    |         5        |
+| Implement payment integration |        13        |
+
+> 💡 **Important:**
+> Story Points represent **relative effort**, not an exact number of hours or days.
+
+---
+
+# 🃏 Planning Poker
+
+**Planning Poker** is a collaborative estimation technique commonly used by Agile teams.
+
+It helps team members discuss and estimate the relative effort required for a user story.
+
+### Basic Process
+
+```text
+User Story Presented
+        ↓
+Team Discusses
+        ↓
+Each Member Selects Estimate
+        ↓
+Estimates Revealed Together
+        ↓
+Differences Discussed
+        ↓
+Estimate Reconsidered
+        ↓
+Team Reaches Shared Understanding
+```
+
+---
+
+## 🃏 Planning Poker Values
+
+Planning Poker often uses values such as:
+
+```text
+1   2   3   5   8   13   21
+```
+
+These values commonly represent Story Points.
+
+### Example
+
+Suppose the team estimates a login feature:
+
+| Team Member | Estimate |
+| :---------- | :------: |
+| Developer A |     5    |
+| Developer B |     5    |
+| Developer C |     8    |
+| Developer D |     3    |
+
+Because estimates differ, team members discuss their reasoning.
+
+After discussion, they estimate again until sufficient shared understanding is reached.
+
+---
+
+# 💡 Why Use Planning Poker?
+
+Planning Poker helps:
+
+* 🤝 Encourage team participation
+* 🧠 Share different perspectives
+* 💬 Encourage discussion
+* 📊 Improve estimation
+* 🚫 Reduce anchoring from the first estimate
+* 🔍 Identify hidden complexity or uncertainty
+
+> **Note:** Planning Poker is primarily an **estimation technique**. Discussion during Planning Poker can help resolve differences in understanding, but it is not itself a general conflict-resolution framework.
+
+---
+
+# ⚖️ Conflict Resolution in Agile Teams
+
+Differences of opinion can occur in Agile teams regarding:
+
+* Technical solutions
+* Task priorities
+* Requirements
+* Estimates
+* Responsibilities
+* Implementation approaches
+
+Agile encourages teams to resolve disagreements through **communication, collaboration, transparency, and shared goals**.
+
+---
+
+## 🤝 Basic Conflict Resolution Process
+
+A simple approach is:
+
+```text
+Identify the Issue
+       ↓
+Listen to Different Views
+       ↓
+Discuss Facts and Concerns
+       ↓
+Focus on Shared Goal
+       ↓
+Evaluate Possible Solutions
+       ↓
+Agree on an Approach
+       ↓
+Review the Result
+```
+
+### Important Practices
+
+| Practice                  | Purpose                                   |
+| :------------------------ | :---------------------------------------- |
+| 👂 **Active Listening**   | Understand different viewpoints           |
+| 💬 **Open Communication** | Discuss concerns clearly                  |
+| 🤝 **Collaboration**      | Find a solution together                  |
+| 📊 **Use Facts**          | Base decisions on evidence where possible |
+| 🎯 **Shared Goals**       | Focus on product and customer value       |
+| 🔄 **Retrospective**      | Learn from recurring team issues          |
+
+---
+
+# 📊 Estimation in Agile
+
+Agile estimation helps teams understand the approximate relative effort involved in upcoming work.
+
+Common estimation approaches include:
+
+| Technique                  | Description                                 |
+| :------------------------- | :------------------------------------------ |
+| 🃏 **Planning Poker**      | Team members estimate using cards or values |
+| ⭐ **Story Points**         | Relative estimation of effort               |
+| 👕 **T-Shirt Sizing**      | Work classified as XS, S, M, L, XL          |
+| 📊 **Relative Estimation** | Compare one work item with another          |
+
+---
+
+# 👕 T-Shirt Sizing
+
+**T-Shirt Sizing** is a simple relative estimation technique.
+
+Tasks or user stories can be classified as:
+
+|  Size  | General Meaning |
+| :----: | :-------------- |
+| **XS** | Very Small      |
+|  **S** | Small           |
+|  **M** | Medium          |
+|  **L** | Large           |
+| **XL** | Very Large      |
+
+Example:
+
+```text
+Change Label        → XS
+Form Validation     → S
+Login Feature       → M
+Payment Module      → L
+Large Integration   → XL
+```
+
+It is useful when teams need a quick high-level estimate.
+
+---
+
+# 🎯 Prioritization
+
+Not every feature has the same importance.
+
+Agile teams prioritize work so that the most valuable or important items can be addressed appropriately.
+
+Factors may include:
+
+* Business value
+* Customer need
+* Risk
+* Dependencies
+* Urgency
+* Development effort
+
+```text
+High Priority
+     ↓
+Medium Priority
+     ↓
+Low Priority
+```
+
+---
+
+# 📅 Sprint Planning
+
+**Sprint Planning** is a Scrum event where the Scrum Team establishes why the Sprint is valuable, what can be done during the Sprint, and how the selected work will get done.
+
+The resulting plan includes a **Sprint Goal** and **Sprint Backlog**.
+
+```text
+Product Backlog
+      ↓
+Sprint Planning
+      ↓
+Sprint Goal
+      +
+Selected Work
+      +
+Delivery Plan
+      ↓
+Sprint Backlog
+```
+
+---
+
+# ☀️ Daily Scrum
+
+The **Daily Scrum** is a short daily Scrum event for the Developers.
+
+Its purpose is to inspect progress toward the **Sprint Goal** and adapt the plan as necessary.
+
+Teams may discuss topics such as:
+
+* Current progress
+* Planned work
+* Problems or blockers
+* Adjustments needed to meet the Sprint Goal
+
+```text
+Progress
+   +
+Next Work
+   +
+Blockers
+   ↓
+Daily Coordination
+```
+
+---
+
+# 🔍 Sprint Review
+
+At the end of a Sprint, the **Sprint Review** is used to inspect the outcome of the Sprint with stakeholders and determine future adaptations.
+
+The team can:
+
+* Demonstrate completed work
+* Discuss progress
+* Collect stakeholder feedback
+* Review changes in the environment
+* Adjust future Product Backlog items
+
+```text
+Sprint Completed
+      ↓
+Inspect Outcome
+      ↓
+Stakeholder Feedback
+      ↓
+Future Adaptation
+```
+
+---
+
+# 🔄 Sprint Retrospective
+
+The **Sprint Retrospective** focuses on improving the team's effectiveness and quality.
+
+The team may discuss:
+
+```text
+What Went Well?
+       +
+What Did Not Go Well?
+       +
+What Can We Improve?
+       ↓
+Improvement Actions
+```
+
+Retrospectives can also help address recurring communication and collaboration problems.
+
+---
+
+# 📋 Kanban
+
+**Kanban** focuses on visualizing work and managing workflow.
+
+A basic Kanban board:
+
+| 📌 To Do | 🔄 In Progress | ✅ Done |
+| :------- | :------------- | :----- |
+| Task 1   | Task 3         | Task 5 |
+| Task 2   | Task 4         | Task 6 |
+
+Tasks move through the board as work progresses.
+
+### Main Ideas
+
+* 👀 Visualize work
+* 🚦 Limit work in progress
+* 🔄 Manage workflow
+* 📈 Improve continuously
+
+---
+
+# 🧑‍💻 Extreme Programming (XP)
+
+**Extreme Programming (XP)** focuses strongly on software quality and engineering practices.
+
+Common XP practices include:
+
+* 🧪 Frequent testing
+* 👥 Pair programming
+* 🔄 Continuous integration
+* 🧹 Refactoring
+* 📦 Small releases
+* 💬 Frequent feedback
+
+---
+
+# 🚀 Lean Software Development
+
+**Lean Software Development** focuses on delivering value while reducing unnecessary work.
+
+Basic ideas include:
+
+* Reduce waste
+* Deliver value
+* Improve continuously
+* Build quality into the process
+* Encourage learning
+* Optimize the overall process
+
+---
+
+# 🆚 Scrum vs Kanban
+
+| Scrum                                | Kanban                                |
+| :----------------------------------- | :------------------------------------ |
+| Uses fixed-length Sprints            | Usually uses continuous flow          |
+| Uses Scrum-specific accountabilities | Does not require Scrum-specific roles |
+| Uses a Sprint Backlog                | Uses a visual workflow                |
+| Regular Scrum events                 | Workflow managed continuously         |
+| Sprint Goal guides the Sprint        | Focus on flow and WIP limits          |
+
+---
+
+# 📚 Important Agile Terms
+
+| Term                | Meaning                                            |
+| :------------------ | :------------------------------------------------- |
+| **Agile**           | Iterative and incremental development approach     |
+| **Scrum**           | Agile framework based on Sprints                   |
+| **Sprint**          | Fixed-length Scrum development cycle               |
+| **Product Backlog** | Ordered list of product work                       |
+| **Sprint Backlog**  | Selected Sprint work and delivery plan             |
+| **User Story**      | Requirement described from a user's perspective    |
+| **Story Points**    | Relative measure used by many teams for estimation |
+| **Planning Poker**  | Collaborative estimation technique                 |
+| **Kanban**          | Workflow visualization and management method       |
+| **Retrospective**   | Scrum event focused on improving effectiveness     |
+| **Increment**       | Usable addition to the product                     |
+| **Blocker**         | Issue preventing or slowing progress               |
+
+---
+
+# 🧠 Quick Revision
+
+### 🔄 Agile
+
+> Iterative and incremental approach focused on collaboration, feedback, and adaptability.
+
+### 🔄 Scrum
+
+> Agile framework that organizes work into fixed-length **Sprints**.
+
+### 👤 User Story
+
+> A simple description of functionality from the user's perspective.
+
+### ⭐ Story Points
+
+> A relative measure of effort, complexity, and uncertainty used by many Agile teams.
+
+### 🃏 Planning Poker
+
+> A collaborative technique for estimating work using values such as Story Points.
+
+### 📅 Sprint Planning
+
+> Scrum event for defining the Sprint Goal and planning the work for the Sprint.
+
+### ☀️ Daily Scrum
+
+> Daily event for Developers to inspect progress toward the Sprint Goal and adapt their plan.
+
+### 🔍 Sprint Review
+
+> Event for inspecting the Sprint outcome with stakeholders and determining future adaptations.
+
+### 🔄 Retrospective
+
+> Event used to identify ways to improve team effectiveness and quality.
+
+---
+
+# 🎯 Key Takeaways
+
+* ✅ Agile follows iterative and incremental development.
+* ✅ Scrum is a widely used Agile framework.
+* ✅ Work in Scrum is organized into Sprints.
+* ✅ User Stories describe requirements from a user perspective.
+* ✅ Story Points provide relative estimates.
+* ✅ Planning Poker supports collaborative estimation.
+* ✅ T-Shirt Sizing provides simple high-level estimation.
+* ✅ Agile teams resolve disagreements through communication and collaboration.
+* ✅ Sprint Planning establishes the Sprint Goal and plan.
+* ✅ Daily Scrum helps Developers coordinate toward the Sprint Goal.
+* ✅ Sprint Review gathers feedback on the Sprint outcome.
+* ✅ Retrospectives help teams continuously improve.
+* ✅ Kanban helps visualize and manage workflow.
+
+---
+
+# 🏁 Conclusion
+
+**Agile** provides a flexible and collaborative approach to software development.
+
+Along with methodologies and frameworks such as **Scrum, Kanban, XP, and Lean**, Agile teams can use practices such as **User Stories, Story Points, Planning Poker, prioritization, and regular feedback** to organize and estimate work.
+
+Team disagreements are handled through open communication, collaboration, shared goals, and continuous improvement.
+
+The overall process can be summarized as:
+
+```text
+Requirements
+     ↓
+User Stories
+     ↓
+Prioritization
+     ↓
+Estimation
+     ↓
+Planning
+     ↓
+Development
+     ↓
+Testing
+     ↓
+Review
+     ↓
+Feedback
+     ↓
+Improvement
+     ↺
+```
+
+These concepts provide a basic foundation for understanding how Agile teams plan, estimate, collaborate, and continuously improve software development.
+
+---
+
+> ### 🎉 Agile & Agile Methodologies — Basic Concepts
+>
+> **Cognizant Digital Nurture 5.0 — Java FSE**

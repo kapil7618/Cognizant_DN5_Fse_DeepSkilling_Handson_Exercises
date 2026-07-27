@@ -1,0 +1,10 @@
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Java build artifacts
+**/bin/
+**/target/
+
+# Maven wrapper logs
+*.log
